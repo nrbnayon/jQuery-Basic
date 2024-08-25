@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Learn jQuery</title>
+</head>
+
+<body>
+
+    <h2>jQuery Structure</h2>
+    <ol>
+        <li>$('selector').action()</li>
+    </ol>
+
+    <h2>jQuery Class and ID Selector</h2>
+    <ol>
+        <li id="li1" class="classSelector">$('.class').action()</li>
+        <li>$('#id').action()</li>
+        <li>For all select $('*').action()</li>
+        <li>
+            Use of "this" in a function :
+            <br>
+            $(document).ready(function() {
+            $(".clickBtn").click(function() {
+            $(".text").hide();
+            $(this).text("Show");
+            });
+            });
+        </li>
+        <li>jQuery selector using Phudu code:
+            <br>
+            $('ol li:nth-child(2)').hide()
+        </li>
+    </ol>
+
+    <h3 class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet quia consequatur, quo eligendi
+        facere cumque
+        officia ducimus laboriosam dicta, voluptatem fugit nesciunt sit sunt velit! Totam beatae nulla dignissimos ea.
+    </h3>
+
+    <button class="clickBtn">Hide</button>
+    <button id="fadeBtn">Fade Text</button>
+    <button id="toggleClassBtn">Toggle Class</button>
+    <button id="slideToggleBtn">Slide Toggle</button>
+
+    <p class="changeText">Hello</p>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="JS/main.js"></script>
+</body>
+
+</html>

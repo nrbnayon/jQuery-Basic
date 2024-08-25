@@ -1,0 +1,15 @@
+/* Example CSS to highlight an element */
+.highlight {
+    background-color: yellow;
+}
+
+/* Basic styling for the page */
+body {
+    font-family: Arial, sans-serif;
+}
+
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 14px;
+}
