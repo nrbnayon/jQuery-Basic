@@ -111,4 +111,20 @@ $(document).ready(function () {
     box.animate({ height: "100px", opacity: "0.4" }, "slow");
     box.animate({ width: "100px", opacity: "1", fontSize: "20px" }, "slow");
   });
+
+  //stop slide
+
+  $(".stopBtn").click(function () {
+    $(".stopText").slideDown(2000);
+  });
+  $(".stop").click(function () {
+    $(".stopText").stop();
+  });
+
+  //   call back function
+  $(".callbackBtn").click(function () {
+    $(".callbackText").hide("slow", function () {
+      alert("Call Nayon");
+    });
+  });
 });

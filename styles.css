@@ -13,6 +13,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
+
 }
 
 h2 {
@@ -152,6 +153,41 @@ button:hover {
 .box4:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.stopBtn {
+    margin-bottom: 0;
+}
+
+.stopText {
+    width: 500px;
+    padding: 10px;
+    background: red;
+    margin: auto;
+    height: 200px;
+    text-align: center;
+    color: white;
+    display: none;
+    overflow: hidden;
+}
+
+.callbackText {
+    width: 500px;
+    padding: 10px;
+    background: red;
+    margin: auto;
+    height: 200px;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+footer {
+    margin: 10px 0 10px 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    text-align: center;
 }
 
 /* Responsive adjustments */
