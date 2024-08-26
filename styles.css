@@ -1,15 +1,178 @@
 /* Example CSS to highlight an element */
 .highlight {
-    background-color: yellow;
+    background-color: #ffeb3b;
+    border-radius: 5px;
+    padding: 5px;
+    transition: background-color 0.3s ease;
 }
 
 /* Basic styling for the page */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    color: #555;
+}
+
+ol {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 20px;
+    list-style-type: decimal;
+}
+
+ol li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.6;
 }
 
 button {
     margin: 5px;
-    padding: 10px;
+    padding: 10px 20px;
     font-size: 14px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Text section styling */
+.textDrop {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.dropbtn {
+    width: 500px;
+    background: #333;
+    color: white;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dropbtn:hover {
+    background-color: #555;
+}
+
+.lorem {
+    padding: 20px;
+    width: 500px;
+    max-width: 100%;
+    background: #000;
+    color: white;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+/* Box styles */
+.box1,
+.box2,
+.box3,
+.box4 {
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box1 {
+    background: linear-gradient(135deg, #1e90ff, #00bfff);
+}
+
+.box2 {
+    background: linear-gradient(135deg, #ff4500, #ff6347);
+}
+
+.box3 {
+    background: linear-gradient(135deg, #32cd32, #7cfc00);
+}
+
+.box4 {
+    background: linear-gradient(135deg, #2404dd, #59aa07);
+}
+
+.animationBox {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.animationBox2 {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.animationBox {
+    background: linear-gradient(135deg, #1e90ff, #00bfff);
+}
+
+.animationBox2 {
+    background: linear-gradient(135deg, #5740d8, #59aa07);
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+
+    ol,
+    .textDrop,
+    .lorem {
+        padding: 10px;
+
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+    .box4 {
+        width: 100%;
+        margin-top: 15px;
+    }
 }
